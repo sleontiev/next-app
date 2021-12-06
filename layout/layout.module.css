@@ -1,0 +1,24 @@
+.wrapper {
+	display: grid;
+
+	height: 100vh;
+	grid-template-columns: auto 230px minmax(530px, 1200px) auto;
+	grid-template-rows: 1fr 72px;
+	gap: 30px;
+	/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+	grid-template-areas:
+		". aside main ."
+		"footer footer footer footer";
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.aside {
+	grid-area: aside;
+}
+
+.main {
+	grid-area: main;
+}
