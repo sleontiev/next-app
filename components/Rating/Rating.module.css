@@ -1,0 +1,10 @@
+.star {
+	margin-right: 5px;
+
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.filled {
+	fill: var(--primary);
+}
