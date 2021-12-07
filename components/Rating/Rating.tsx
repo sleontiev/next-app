@@ -30,7 +30,7 @@ export const Rating = ({ value, setNewRating, ...props }): JSX.Element => {
   };
   return (
     <div {...props}>
-      {initialRating.map(item => item)}
+      {initialRating.map((item, index) => <span key={index}>{item}</span>)}
     </div>
   );
 };

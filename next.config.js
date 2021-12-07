@@ -1,4 +1,7 @@
 module.exports = {
+  reactStrictMode: true,
+};
+module.exports = {
 	webpack(config, options) {
 		config.module.rules.push({
 			loader: '@svgr/webpack',

@@ -4,4 +4,5 @@ export interface IChip extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
   type: 'primary' | 'secondary' | 'red' | 'green' | 'grey',
   size?: 'big',
   children: ReactNode,
+  link?: string,
 }

@@ -2,7 +2,7 @@ import cn from 'classnames';
 import classes from './Chip.module.css';
 import { IChip } from './Chip.props';
 
-export const Chip = ({ type, size, children, className, ...props }: IChip): JSX.Element => {
+export const Chip = ({ link, type, size, children, className, ...props }: IChip): JSX.Element => {
   return (
     <div className={cn(classes.chip, className, {
       [classes.primary]: type === 'primary',
@@ -12,7 +12,7 @@ export const Chip = ({ type, size, children, className, ...props }: IChip): JSX.
       [classes.grey]: type === 'grey',
       [classes.big]: size === 'big',
     })} {...props}>
-      {children}
+      {link ? <a href={link}>{children}</a> : children}
     </div>
   );
 };
