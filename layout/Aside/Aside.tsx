@@ -1,9 +1,10 @@
+import { Menu } from "../../components/Menu/Menu";
 import { IAside } from "./Aside.props";
 
 export const Aside = ({...props}: IAside) => {
   return (
     <div {...props}>
-      aside
+      <Menu />
     </div>
   );
 };

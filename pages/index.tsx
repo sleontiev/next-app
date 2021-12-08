@@ -1,11 +1,11 @@
 import { GetStaticProps } from "next";
 import { useState } from "react";
 import { Button, Heading, Paragraph, Chip, Rating } from "../components";
-import { withLayout } from "../layout/layout";
 import axios from 'axios';
 import { IMenu } from "../interfaces/Menu.interface";
+import { withLayout } from "../context/app.context";
 
-function Home({ menu }: IHome) {
+function Home({ menu, firstCategory }: IHome) {
   const [ratingValue, setRatingValue] = useState<number>(2);
   return (
     <>

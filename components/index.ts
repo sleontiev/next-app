@@ -3,3 +3,7 @@ export * from './Button/Button';
 export * from './Paragraph/Paragraph';
 export * from './Chip/Chip';
 export * from './Rating/Rating';
+export * from './Product/Product';
+export * from './PageComponent/Page';
+export * from './Advantages/Advantages';
+export * from './Vacancy/Vacancy';

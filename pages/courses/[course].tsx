@@ -1,16 +1,19 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
-import { withLayout } from "../../layout/layout";
 import axios from 'axios';
 import { IMenu } from "../../interfaces/Menu.interface";
 import { IPage } from "../../interfaces/Page.interface";
 import { ParsedUrlQuery } from "querystring";
 import { IProduct } from "../../interfaces/Product.interface";
+import { withLayout } from "../../context/app.context";
+import { Page } from "../../components";
 
 function Course({ page, product }: ICourse) {
-  console.log(page.category);
   return (
     <>
-      {product.map(item => <p key={item._id}>{item.categories}</p>)}
+      <Page
+        data={page}
+        products={product}
+      />
     </>
   );
 }
